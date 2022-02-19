@@ -1,0 +1,29 @@
+{
+	"compilerOptions": {
+    "baseUrl": ".",
+		"outDir": "dist/cjs",
+    "strict": false,
+    "lib": ["dom", "ES2018"],
+    "target": "ES2018",
+    "types": [],
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+		"noImplicitReturns": true,
+    "declaration": true,
+    "removeComments": true,
+    "paths": {
+      "@/*": [ "src/*" ]
+    }
+	},
+  "rules": {
+    "@typescript-eslint/ban-ts-comment": 0
+  },
+  "types": [ "node", "jest" ],
+  "include": ["src/**/*"],
+	"exclude": [
+		"node_modules",
+		".vscode-test-web"
+	]
+}
